@@ -132,6 +132,30 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
+  <!-- Firebase -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDxFlGTetZT8Sj53wtvL_L8s5KwtbCUajQ",
+      authDomain: "net-graph-insights.firebaseapp.com",
+      projectId: "net-graph-insights",
+      storageBucket: "net-graph-insights.appspot.com",
+      messagingSenderId: "20917421980",
+      appId: "1:20917421980:web:bfc72d499786130c9a6a59",
+      measurementId: "G-M68VNSLBY0"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
